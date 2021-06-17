@@ -33,11 +33,11 @@ namespace v0617
            
             if (label1.Top < 0)
                 vy += Math.Abs(vy);
-            
-               
+            if (label1.Bottom > ClientSize.Height)
+                vy +=-Math.Abs(vy);
             if (label1.Left < 0)
                 vx += Math.Abs(vx);
-           
+            if (label1.Right > ClientSize.Width)
                 vx += -Math.Abs(vx);
         }
     }
